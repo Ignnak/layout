@@ -1,31 +1,122 @@
-.container {}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background-color: lightblue;
+    margin-inline: auto;
+}
 
-.header__wrapper {}
+.header__wrapper {
+    background-color: lightpink;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
-.logo {}
+}
+
+.logo {
+    width: 94px;
+    height: 94px;
+    background-color: darkblue;
+    display: inline-block;
+    margin: 10px;
+}
 .logo .logo__link {}
 
-.menu {}
-.menu .menu__item {}
+.menu {
+    background-color: lightgoldenrodyellow;
+}
+.menu .menu__item {
+    padding: 10px;
+    display: inline-block;
+    margin-inline: 10px;
+    background-color: red;
+}
 .menu .menu__item .menu__item--active {}
 
-.main__wrapper {}
+.main__wrapper {
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 650px) {
+    .main__wrapper {
+        flex-direction: row;
+    }
+}
 
-.mainArticle {}
-.mainArticle .mainArticle__hdl {}
+.mainArticle {
+    background-color: lightcoral;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.mainArticle .mainArticle__hdl {
+
+}
 .mainArticle .mainArticle__text {}
 .mainArticle .mainArticle__related {}
 
-.related {}
-.related .related__item {}
+.related {
+    background-color: lightseagreen;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    align-self: center;
+}
+.related .related__item {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 5px;
+}
 
-.aside {}
-.aside .aside__item {}
+.aside {
+    background-color: gold;
+    display: flex;
+    justify-content: space-around;
+    order: -10;
 
-.footer__wrapper {}
+}
+
+@media screen and (min-width: 400px){
+    .aside{
+        order: 0;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .aside {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.aside .aside__item {
+    width: 100px;
+    height: 100px;
+    background-color: silver;
+    margin: 5px;
+}
+
+.footer__wrapper {
+    background-color: antiquewhite;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
 .secondaryMenu {}
 .secondaryMenu .secondaryMenu__item {}
 
-.copyright {}
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
 
